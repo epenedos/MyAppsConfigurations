@@ -13,7 +13,7 @@ commands:
     group:
       isDefault: true
       kind: run
-    workingDir: ${PROJECT_SOURCE}
+    workingDir: ${PROJECT_SOURCE}  
   id: run
 components:
 - container:
