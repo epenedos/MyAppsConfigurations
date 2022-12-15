@@ -14,7 +14,7 @@ spec:
         app: odf
     spec:
       containers:
-        - name: odf
-          image: image-registry.openshift-image-registry.svc:5000/aodf/odf:v1
-            ports:
+        name: odf
+        image: odf:v1
+           ports:
             containerPort: 8080
