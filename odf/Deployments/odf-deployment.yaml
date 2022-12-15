@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         name: odf
-        image: 'odf:v1'
-           ports:
-            containerPort: 8080
+          image: 'odf:v1'
+            ports:
+              containerPort: 8080
