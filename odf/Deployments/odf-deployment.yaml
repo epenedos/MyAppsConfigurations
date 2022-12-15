@@ -14,7 +14,7 @@ spec:
         app: odf
     spec:
       containers:
-        - image: odf:v1
+        - image: odf:latest
           name: odf
           ports:
             - containerPort: 8080
