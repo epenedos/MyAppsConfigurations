@@ -2,6 +2,8 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: odf
+  annotations:
+    link.argocd.argoproj.io/external-link: odf-aodf.apps.ocp.sdxsolutions.com
 spec:
   to:
     kind: Service
