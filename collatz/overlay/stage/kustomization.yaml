@@ -1,4 +1,4 @@
-namePrefix: staging-  
+namePrefix: staging-
 
 commonLabels:
   variant: staging
@@ -8,11 +8,13 @@ commonAnnotations:
   stage: staging
 
 bases:
-- ../../base
+  - ../../base
 
 patchesStrategicMerge:
   - deployment-frontend.yaml
   - deployment-backend.yaml
+  - build-frontend.yaml
+  - build-backend.yaml
   - service-frontend.yaml
   - service-backend.yaml
   - route.yaml
