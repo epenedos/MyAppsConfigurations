@@ -5,6 +5,8 @@ commonLabels:
   org: wanja.org
 
 resources:
-- deployment.yaml
-- service.yaml
+- deployment-frontend.yaml
+- deployment-backend.yaml
+- service-frontend.yaml
+- service-backend.yaml
 - route.yaml

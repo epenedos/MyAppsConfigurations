@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: collatz-backend
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - image: collatz-backend:latest
+        imagePullPolicy: Always
+        name: collatz-backend
+        ports:
+          - containerPort: 8081
+            protocol: TCP

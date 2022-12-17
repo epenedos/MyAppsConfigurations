@@ -11,5 +11,6 @@ bases:
 - ../../base
 
 patchesStrategicMerge:
-  - deployment.yaml
+  - deployment-frontend.yaml
+  - deployment-backend.yaml
   - route.yaml

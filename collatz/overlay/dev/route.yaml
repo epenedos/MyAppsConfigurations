@@ -1,13 +1,13 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: person-service
+  name: collatz
 spec:
   port:
     targetPort: 8080-tcp
   to:
     kind: Service
-    name: dev-person-service
+    name: dev-collatz
     weight: 100
   wildcardPolicy: None
 

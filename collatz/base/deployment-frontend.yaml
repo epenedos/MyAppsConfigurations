@@ -2,14 +2,14 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: person-service
-  name: person-service
+    app: collatz
+  name: collatz-frontend
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
   selector:
     matchLabels:
-      deployment: person-service
+      deployment: collatz-frontend
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -18,12 +18,12 @@ spec:
   template:
     metadata:
       labels:
-        deployment: person-service
+        deployment: collatz-frontend
     spec:
       containers:
-        - image: image-registry.openshift-image-registry.svc:5000/book-dev/person-service:latest
+        - image: collatz-frontend:latest
           imagePullPolicy: IfNotPresent
-          name: person-service
+          name: collatz-frontend
           ports:
             - containerPort: 8080
               protocol: TCP
