@@ -23,7 +23,7 @@ spec:
       containers:
         - image: collatz-backend:latest
           imagePullPolicy: IfNotPresent
-          name: collatz-frontend
+          name: collatz-backend
           ports:
             - containerPort: 8080
               protocol: TCP
