@@ -7,6 +7,8 @@ commonLabels:
 resources:
 - deployment-frontend.yaml
 - deployment-backend.yaml
+- imagestream-frontend.yaml
+- imagestream-backend.yaml
 - build-frontend.yaml
 - build-backend.yaml
 - service-frontend.yaml
