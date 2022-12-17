@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     app: collatz
-  name: stage-collatz-frontend
+  name: collatz-frontend
 spec:
   ports:
     - name: 8080-tcp
@@ -11,6 +11,6 @@ spec:
       protocol: TCP
       targetPort: 8080
   selector:
-    deployment: stage-collatz-frontend
+    deployment: collatz-frontend
   sessionAffinity: None
   type: ClusterIP
