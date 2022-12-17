@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-      - image: collatz-backend:latest
+      - image: staging-collatz-backend:latest
         imagePullPolicy: Always
         name: collatz-backend
         ports:
