@@ -6,7 +6,7 @@ metadata:
   name: collatz-backend
 spec:
   progressDeadlineSeconds: 600
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       deployment: collatz-backend

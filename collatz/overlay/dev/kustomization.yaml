@@ -13,6 +13,6 @@ bases:
 patchesStrategicMerge:
   - deployment-frontend.yaml
   - deployment-backend.yaml
-  - service-frontend.yaml
-  - service-backend.yaml
+  - build-frontend.yaml
+  - build-backend.yaml
   - route.yaml
