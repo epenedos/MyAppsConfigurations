@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-      - image: image-registry.openshift-image-registry.svc:5000/aodf/staging-collatz-backend:latest
+      - image: staging-collatz-backend:latest
         imagePullPolicy: Always
         name: collatz-backend
         ports:
