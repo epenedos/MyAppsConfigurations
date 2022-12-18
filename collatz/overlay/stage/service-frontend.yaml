@@ -11,6 +11,6 @@ spec:
       protocol: TCP
       targetPort: 8080
   selector:
-    deployment: collatz-frontend
+    deployment: staging-collatz-frontend
   sessionAffinity: None
   type: ClusterIP
