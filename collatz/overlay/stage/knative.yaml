@@ -4,7 +4,6 @@ metadata:
   name: ksvc-staging-collatz-backend
 spec:
   template:
-    metadata:
     spec:
       containerConcurrency: 0
       containers:
