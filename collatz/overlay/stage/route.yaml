@@ -7,7 +7,7 @@ spec:
     targetPort: 8080-tcp
   to:
     kind: Service
-    name: collatz-frontend
+    name: staging-collatz-frontend
     weight: 100
   wildcardPolicy: None
 
