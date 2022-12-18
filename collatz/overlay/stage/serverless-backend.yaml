@@ -1,5 +1,5 @@
-apiVersion: serving.knative.dev/v1
 kind: Service
+apiVersion: serving.knative.dev/v1
 metadata:
   name: ksvc-staging-collatz-backend
 spec:
