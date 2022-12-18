@@ -1,0 +1,26 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: ksvc-collatz-backend
+spec:
+  template:
+    spec:
+      containerConcurrency: 0
+      containers:
+        - image: >-
+            image-registry.openshift-image-registry.svc:5000/aodf/collatz-backend
+          imagePullPolicy: IfNotPresent
+          name: ksvc-collatz-backend
+          ports:
+            - containerPort: 8081
+              protocol: TCP
+          readinessProbe:
+            successThreshold: 1
+            tcpSocket:
+              port: 0
+          resources: {}
+      enableServiceLinks: false
+      timeoutSeconds: 300
+  traffic:
+    - latestRevision: true
+      percent: 100
