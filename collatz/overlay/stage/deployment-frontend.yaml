@@ -14,5 +14,5 @@ spec:
           - containerPort: 8080
             protocol: TCP
         env:
-          - name: ENV
+          - name: BACKEND
             value: staging-collatz-backend
