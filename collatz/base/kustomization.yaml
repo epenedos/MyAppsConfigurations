@@ -14,3 +14,4 @@ resources:
 - service-frontend.yaml
 - service-backend.yaml
 - route.yaml
+- serverless-backend.yaml
