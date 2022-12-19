@@ -2,6 +2,8 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   name: collatz
+  annotations:  
+    link.argocd.argoproj.io/external-link: http://dev-collatz-aodf.apps.obelix.lab.pen
 spec:
   port:
     targetPort: 8080-tcp
