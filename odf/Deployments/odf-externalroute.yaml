@@ -3,7 +3,7 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: external-odf
   annotations:
-    link.argocd.argoproj.io/external-link: http://odf-aodf.ocp.sdxsolutions.com/
+    link.argocd.argoproj.io/external-link: http://odf-aodf.apps.ocp.sdxsolutions.com/
 spec:
   host: odf-aodf.apps.ocp.sdxsolutions.com
   to:
