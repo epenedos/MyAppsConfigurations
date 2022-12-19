@@ -17,4 +17,4 @@ spec:
           - name: BACKEND
             value: staging-collatz-backend
           - name: TESTE
-            value: ARGOCD_APP_NAMESPACE 
+            value: $(ARGOCD_APP_NAMESPACE) 
