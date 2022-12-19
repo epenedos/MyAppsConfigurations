@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-      - image: image-registry.openshift-image-registry.svc:5000/$ARGOCD_APP_NAMESPACE/dev-collatz-frontend:latest
+      - image: image-registry.openshift-image-registry.svc:5000/$(ARGOCD_APP_NAMESPACE)/dev-collatz-frontend:latest
         imagePullPolicy: Always
         name: collatz-frontend
         ports:
