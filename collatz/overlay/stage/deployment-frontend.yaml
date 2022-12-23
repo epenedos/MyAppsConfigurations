@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   name: collatz-frontend
   labels:
-    app: dev-collatz
-    app.kubernetes.io/part-of: dev-collatz
+    app: staging-collatz
+    app.kubernetes.io/part-of: staging-collatz
 spec:
   replicas: 2
   template:
