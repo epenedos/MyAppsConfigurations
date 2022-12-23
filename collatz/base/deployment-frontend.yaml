@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: collatz
+    app.kubernetes.io/part-of: collatz
   name: collatz-frontend
 spec:
   progressDeadlineSeconds: 600
