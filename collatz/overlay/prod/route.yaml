@@ -1,0 +1,16 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: collatz
+  annotations:  
+    link.argocd.argoproj.io/external-link: http://prod-collatz-aodf.apps.obelix.lab.pen
+spec:
+  port:
+    targetPort: 8080-tcp
+  to:
+    kind: Service
+    name: prod-collatz-frontend
+    weight: 100
+  wildcardPolicy: None
+
+  

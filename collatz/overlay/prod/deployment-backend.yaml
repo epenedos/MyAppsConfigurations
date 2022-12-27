@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: collatz-backend
+  labels:
+    app: prod-collatz
+    app.kubernetes.io/part-of: prod-collatz
+spec:
+  replicas: 5
+  template:
+    spec:
+      containers:
+      - image: image-registry.openshift-image-registry.svc:5000/aodf/prod-collatz-backend:latest
+        imagePullPolicy: Always
+        name: collatz-backend
+        ports:
+          - containerPort: 8081
+            protocol: TCP

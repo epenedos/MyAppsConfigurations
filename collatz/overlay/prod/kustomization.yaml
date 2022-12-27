@@ -1,0 +1,18 @@
+namePrefix: prod-
+
+commonLabels:
+  variant: prod
+
+commonAnnotations:
+  note: We are on staging now
+  stage: prod
+
+bases:
+  - ../../base
+
+patchesStrategicMerge:
+  - deployment-frontend.yaml
+  - deployment-backend.yaml
+  - build-frontend.yaml
+  - build-backend.yaml
+  - route.yaml

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: collatz-frontend
+  labels:
+    app: prod-collatz
+    app.kubernetes.io/part-of: prod-collatz
+spec:
+  replicas: 5
+  template:
+    spec:
+      containers:
+      - image: image-registry.openshift-image-registry.svc:5000/aodf/prod-collatz-frontend:latest
+        imagePullPolicy: Always
+        name: collatz-frontend
+        ports:
+          - containerPort: 8080
+            protocol: TCP
+        env:
+          - name: BACKEND
+            value: staging-collatz-backend
