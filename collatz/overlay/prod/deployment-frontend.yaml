@@ -18,4 +18,4 @@ spec:
             protocol: TCP
         env:
           - name: BACKEND
-            value: staging-collatz-backend
+            value: prod-collatz-backend
