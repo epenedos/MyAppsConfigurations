@@ -1,24 +1,23 @@
 kind: Service
 apiVersion: serving.knative.dev/v1
 metadata:
-  name: ksvc-staging-collatz-backend
+  name: ksvc-collatz-backend
 spec:
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app.kubernetes.io/component: ksvc-staging-collatz-backend
-        app.kubernetes.io/instance: ksvc-staging-collatz-backend
+        app.kubernetes.io/component: ksvc-collatz-backend
+        app.kubernetes.io/instance: ksvc-collatz-backend
         app.openshift.io/runtime-version: latest
-        org: wanja.org
-        variant: staging
+        variant: prod
     spec:
       containerConcurrency: 0
       containers:
         - image: >-
             image-registry.openshift-image-registry.svc:5000/aodf/staging-collatz-backend
           imagePullPolicy: IfNotPresent
-          name: ksvc-staging-collatz-backend
+          name: ksvc-collatz-backend
           ports:
             - containerPort: 8081
               protocol: TCP

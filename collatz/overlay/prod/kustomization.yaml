@@ -16,3 +16,5 @@ patchesStrategicMerge:
   - build-frontend.yaml
   - build-backend.yaml
   - route.yaml
+  - serverless-backend.yaml
+  
