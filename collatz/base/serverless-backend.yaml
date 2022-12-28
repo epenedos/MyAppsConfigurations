@@ -3,6 +3,9 @@ apiVersion: serving.knative.dev/v1
 metadata:
   name: ksvc-collatz-backend
 spec:
+  selector:
+    org: sdxsolutions.com
+    variant: prod
   template:
     metadata:
       creationTimestamp: null
