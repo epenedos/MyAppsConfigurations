@@ -10,7 +10,6 @@ spec:
         app.kubernetes.io/component: ksvc-collatz-backend
         app.kubernetes.io/instance: ksvc-collatz-backend
         app.openshift.io/runtime-version: latest
-        org: wanja.org
     spec:
       containerConcurrency: 0
       containers:
