@@ -15,7 +15,7 @@ spec:
       containerConcurrency: 0
       containers:
         - image: >-
-            image-registry.openshift-image-registry.svc:5000/aodf/prod-collatz-backend
+            image-registry.openshift-image-registry.svc:5000/aodf/collatz-backend
           imagePullPolicy: IfNotPresent
           name: ksvc-collatz-backend
           ports:
