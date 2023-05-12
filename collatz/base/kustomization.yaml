@@ -4,8 +4,9 @@ kind: Kustomization
 commonLabels:
   org: sdxsolutions.com
   
-metadata:
-  namespace: $ARGOCD_APP_NAMESPACE
+data:
+    kustomize.buildOptions: --load-restrictor LoadRestrictionsNone
+    kustomize.buildOptions.v4.4.0: --output /tmp
 
 resources:
 - deployment-frontend.yaml
