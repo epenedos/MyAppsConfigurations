@@ -3,6 +3,9 @@ kind: Kustomization
 
 commonLabels:
   org: sdxsolutions.com
+  
+metadata:
+  namespace: $ARGOCD_APP_NAMESPACE
 
 resources:
 - deployment-frontend.yaml
