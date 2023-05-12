@@ -4,9 +4,6 @@ kind: Kustomization
 commonLabels:
   org: sdxsolutions.com
   
-data:
-    kustomize.buildOptions: --load-restrictor LoadRestrictionsNone
-    kustomize.buildOptions.v4.4.0: --output /tmp
 
 resources:
 - deployment-frontend.yaml
