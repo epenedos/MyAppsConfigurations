@@ -29,5 +29,6 @@ spec:
           resources: {}
       enableServiceLinks: false
       timeoutSeconds: 300
-  traffic:
-    - latestRevision: true
+  traffic:    
+  - latestRevision: true      
+    percent: 100
