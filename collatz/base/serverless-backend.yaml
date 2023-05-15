@@ -5,8 +5,7 @@ metadata:
 spec:
   template:
     metadata:
-      creationTimestamp: null
-      
+      creationTimestamp: null      
     spec:
       containerConcurrency: 0
       containers:
